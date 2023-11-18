@@ -1,0 +1,22 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile",
+    },
+    "forwardPorts": [8888, 6105],
+    "customizations": {
+        "vscode": {
+          "extensions": [
+			"ms-python.python",
+			"ms-python.vscode-pylance",
+			"quarto.quarto",
+			"valentjn.vscode-ltex",
+			"ms-toolsai.jupyter",
+			"ms-azuretools.vscode-docker"
+		]
+        }
+    },
+    "runArgs": [
+        "--gpus",
+        "all"
+    ]
+}
